@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Events</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              src="/images/amazing_brand.png"
+              alt="Logo"
+              class="d-inline-block align-text-top object-fit-cover logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-md-flex flex-md-row-reverse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/upcomingEvents.html"
+                  >Upcomming Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pastEvents.html">Past Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/stats.html">Stats</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carouselImg">
+            <img
+              src="/images/bannerCine.jpg"
+              class="carouselImg d-block object-fit-cover"
+              alt="Cine"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Home</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/bannerMuseo.jpg"
+              class="carouselImg d-block object-fit-cover"
+              alt="Museo"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Upcomming Events</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/bannerMusic.jpg"
+              class="carouselImg d-block object-fit-cover"
+              alt="Music"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Past Events</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/bannerComida.jpg"
+              class="carouselImg d-block object-fit-cover"
+              alt="Comida"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Contact Us</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/bannerLuces.jpg"
+              class="carouselImg d-block object-fit-cover"
+              alt="Luces"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stats</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-fluid mt-2 mb-2">
+        <div class="row">
+          <form class="d-flex" role="search">
+            <div class="col-6">
+              <div class="row">
+                <div class="col">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="cine"
+                  />
+                  <label class="form-check-label" for="cine"> Cine </label>
+                </div>
+                <div class="col">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="comida"
+                  />
+                  <label class="form-check-label" for="comida"> Comida </label>
+                </div>
+                <div class="col">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="museo"
+                  />
+                  <label class="form-check-label" for="museo"> Museo </label>
+                </div>
+                <div class="col">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="musica"
+                  />
+                  <label class="form-check-label" for="musica"> Musica </label>
+                </div>
+                <div class="col">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="luces"
+                  />
+                  <label class="form-check-label" for="luces"> Luces </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex flex-row-reverse">
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+                <input
+                  class="form-control me-2 buscar"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex align-content-between">
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
+            >
+              <img
+                src="/images/food_fair.jpg"
+                class="cardImg d-block object-fit-cover rounded"
+                alt="Museo"
+              />
+              <br />
+              <h5>Festival of the collectivities</h5>
+              <p>
+                Enjoy your favorite dishes from different countries in a unique
+                event for the whole family.
+              </p>
+              <div data-bs-theme="light">
+                <button type="button" aria-label="Price" class="btn btn-light">
+                  Price
+                </button>
+                <button type="button" aria-label="Detail" class="btn btn-light">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
+            >
+              <img
+                src="/images/outing_to_the_museum.jpg"
+                class="cardImg d-block object-fit-cover rounded"
+                alt="Museo"
+              />
+              <br />
+              <h5>Art Exhibition</h5>
+              <p>
+                Let's go to the art museum for an incredible tour to learn about
+                the largest dinosaurs.
+              </p>
+              <div data-bs-theme="light">
+                <button type="button" aria-label="Price" class="btn btn-light">
+                  Price
+                </button>
+                <button type="button" aria-label="Detail" class="btn btn-light">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
+            >
+              <img
+                src="/images/costume_party.jpg"
+                class="cardImg d-block object-fit-cover rounded"
+                alt="Museo"
+              />
+              <br />
+              <h5>Halloween Night</h5>
+              <p>
+                Come in your scariest costume character to win amazing prizes.
+              </p>
+              <div data-bs-theme="light">
+                <button type="button" aria-label="Price" class="btn btn-light">
+                  Price
+                </button>
+                <button type="button" aria-label="Detail" class="btn btn-light">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="card border shadow m-3 p-2 d-flex align-items-center text-center"
+            >
+              <img
+                src="/images/music_concert.jpg"
+                class="cardImg d-block object-fit-cover rounded"
+                alt="Metallica"
+              />
+              <br />
+              <h5>Metallica in concert</h5>
+              <p>The only concert of the most emblematic band in the world.</p>
+              <div data-bs-theme="light">
+                <button type="button" aria-label="Price" class="btn btn-light">
+                  Price
+                </button>
+                <button type="button" aria-label="Detail" class="btn btn-light">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="col-6">
+          <div class="container">
+            <div class="row">
+              <div class="col-1">
+                <img
+                  src="/images/facebook.png"
+                  class="socialImg d-block object-fit-cover rounded"
+                  alt="facebook"
+                />
+              </div>
+              <div class="col-1">
+                <img
+                  src="/images/instagram.png"
+                  class="socialImg d-block object-fit-cover rounded"
+                  alt="instagram"
+                />
+              </div>
+              <div class="col-1">
+                <img
+                  src="/images/whatsapp.png"
+                  class="socialImg d-block object-fit-cover rounded"
+                  alt="whatsapp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="container text-end">
+            <h2>COHORT 3</h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

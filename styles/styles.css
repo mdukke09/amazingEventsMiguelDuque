@@ -1,0 +1,39 @@
+.logo{
+    width: 180px;
+}
+
+.carouselImg{
+    width: 100%;
+    min-width: 100px;
+    max-height: 20vw;
+    object-position: 50% 70%;
+}
+
+.card{
+    width: 90%;
+}
+
+.cardImg{
+    width: 90%;
+    height: 25%;
+    object-position: 50% 70%;
+}
+
+.socialImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buscar{
+    max-width: 200px;
+    display: inline-block;
+}
+
+
+footer{
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
