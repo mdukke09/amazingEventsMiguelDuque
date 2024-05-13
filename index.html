@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="sticky-top">
@@ -35,18 +36,13 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse d-md-flex flex-md-row-reverse"
-            id="navbarNav"
-          >
+          <div class="collapse navbar-collapse d-md-flex flex-md-row-reverse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/upcomingEvents.html"
-                  >Upcomming Events</a
-                >
+                <a class="nav-link" href="/upcomingEvents.html">Upcomming Events</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/pastEvents.html">Past Events</a>
@@ -173,61 +169,34 @@
 
       <div class="container-fluid mt-2 mb-2">
         <div class="row">
-          <form class="d-flex" role="search">
+          <form class="d-flex formu" role="search">
             <div class="col-6">
               <div class="row">
-                <div class="col">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="cine"
-                  />
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="cine" />
                   <label class="form-check-label" for="cine"> Cine </label>
                 </div>
-                <div class="col">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="comida"
-                  />
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="comida" />
                   <label class="form-check-label" for="comida"> Comida </label>
                 </div>
-                <div class="col">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="museo"
-                  />
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="museo" />
                   <label class="form-check-label" for="museo"> Museo </label>
                 </div>
-                <div class="col">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="musica"
-                  />
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="musica" />
                   <label class="form-check-label" for="musica"> Musica </label>
                 </div>
-                <div class="col">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="luces"
-                  />
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input class="form-check-input" type="checkbox" value="" id="luces" />
                   <label class="form-check-label" for="luces"> Luces </label>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <div class="d-flex flex-row-reverse">
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
+                <button class="btn btn-outline-success" type="submit">Search</button>
                 <input
                   class="form-control me-2 buscar"
                   type="search"
@@ -241,107 +210,7 @@
       </div>
 
       <div class="container">
-        <div class="row d-flex align-content-between">
-          <div class="col-lg-3 col-sm-6">
-            <div
-              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
-            >
-              <img
-                src="/images/food_fair.jpg"
-                class="cardImg d-block object-fit-cover rounded"
-                alt="Museo"
-              />
-              <br />
-              <h5>Festival of the collectivities</h5>
-              <p>
-                Enjoy your favorite dishes from different countries in a unique
-                event for the whole family.
-              </p>
-              <div data-bs-theme="light">
-                <button type="button" aria-label="Price" class="btn btn-light">
-                  Price
-                </button>
-                <button type="button" aria-label="Detail" class="btn btn-light">
-                  Detail
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div
-              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
-            >
-              <img
-                src="/images/outing_to_the_museum.jpg"
-                class="cardImg d-block object-fit-cover rounded"
-                alt="Museo"
-              />
-              <br />
-              <h5>Art Exhibition</h5>
-              <p>
-                Let's go to the art museum for an incredible tour to learn about
-                the largest dinosaurs.
-              </p>
-              <div data-bs-theme="light">
-                <button type="button" aria-label="Price" class="btn btn-light">
-                  Price
-                </button>
-                <button type="button" aria-label="Detail" class="btn btn-light">
-                  Detail
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div
-              class="card shadow m-3 border p-2 d-flex align-items-center text-center"
-            >
-              <img
-                src="/images/costume_party.jpg"
-                class="cardImg d-block object-fit-cover rounded"
-                alt="Museo"
-              />
-              <br />
-              <h5>Halloween Night</h5>
-              <p>
-                Come in your scariest costume character to win amazing prizes.
-              </p>
-              <div data-bs-theme="light">
-                <button type="button" aria-label="Price" class="btn btn-light">
-                  Price
-                </button>
-                <button type="button" aria-label="Detail" class="btn btn-light">
-                  Detail
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div
-              class="card border shadow m-3 p-2 d-flex align-items-center text-center"
-            >
-              <img
-                src="/images/music_concert.jpg"
-                class="cardImg d-block object-fit-cover rounded"
-                alt="Metallica"
-              />
-              <br />
-              <h5>Metallica in concert</h5>
-              <p>The only concert of the most emblematic band in the world.</p>
-              <div data-bs-theme="light">
-                <button type="button" aria-label="Price" class="btn btn-light">
-                  Price
-                </button>
-                <button type="button" aria-label="Detail" class="btn btn-light">
-                  Detail
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="padreTarjetas" class="row d-flex justify-content-center"></div>
       </div>
     </main>
 
@@ -350,21 +219,21 @@
         <div class="col-6">
           <div class="container">
             <div class="row">
-              <div class="col-1">
+              <div class="col-3 col-sm-2 col-xl-1">
                 <img
                   src="/images/facebook.png"
                   class="socialImg d-block object-fit-cover rounded"
                   alt="facebook"
                 />
               </div>
-              <div class="col-1">
+              <div class="col-3 col-sm-2 col-xl-1">
                 <img
                   src="/images/instagram.png"
                   class="socialImg d-block object-fit-cover rounded"
                   alt="instagram"
                 />
               </div>
-              <div class="col-1">
+              <div class="col-3 col-sm-2 col-xl-1">
                 <img
                   src="/images/whatsapp.png"
                   class="socialImg d-block object-fit-cover rounded"

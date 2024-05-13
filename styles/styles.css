@@ -1,3 +1,8 @@
+:root{
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .logo{
     width: 180px;
 }
@@ -10,19 +15,62 @@
 }
 
 .card{
-    width: 90%;
+    width: 50%;
+    height: 350px;
 }
 
 .cardImg{
-    width: 90%;
-    height: 25%;
+    width: 95%;
+    height: 18vw;
     object-position: 50% 70%;
 }
 
 .socialImg{
-    width: 100%;
-    height: 100%;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
+}
+
+.formu{
+    font-size: .8rem;
+}
+
+.form-check-input {
+  width: .8rem;
+  height: .8rem;
+}
+
+.formulario{
+    background-color: #212529;
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: justify;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.formulario textarea, input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.formulario textarea{
+    height: 50vw;
+}
+
+#submit{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: brown;
+    color: white;
+    border: 1px black solid;
 }
 
 .buscar{
@@ -30,10 +78,119 @@
     display: inline-block;
 }
 
+.tabla{
+    font-weight: bold;
+}
+
+.tabla th, td{
+    border: 1px #212529 solid;
+    padding: 5px;
+}
+
+.tabla th {
+    background-color: #212529;
+    color: white;
+}
 
 footer{
     background-color: #212529;
     color: white;
     padding: 20px;
     margin-top: 10px;
+}
+
+@media only screen and (max-width:575px){
+    .formulario{
+        font-size: .8rem;
+        margin-top: 10px;
+        width: 90vw;
+    }
+    .formulario textarea{
+        height: 20vw;
+    }
+    input{
+        padding: 6px;
+    }
+    #submit{
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .card{
+        width: 95%;
+        height: 350px;
+    }
+    
+    .cardImg{
+        width: 95%;
+        height: 18vw;
+        object-position: 50% 70%;
+    }
+    .formulario{
+        font-size: .8rem;
+        width: 80vw;
+    }
+    .formulario textarea{
+        height: 10vw;
+    }
+    input{
+        padding: 8px;
+    }
+    #submit{
+        font-size: .6rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    :root{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 99%;
+        height: 410px;
+    }
+    
+    .cardImg{
+        width: 95%;
+        height: 17vw;
+    }
+
+    .formulario{
+        width: 60vw;
+        margin-top: 10px;
+    }
+
+    .formulario textarea{
+        height: 15vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 99%;
+        height: 410px;
+    }
+    
+    .cardImg{
+        width: 95%;
+        height: 10vw;
+    }
+    
+    .formulario{
+        width: 60vw;
+        margin-top: 10px;
+    }
+
+    .formulario textarea{
+        height: 10vw;
+    }
 }
